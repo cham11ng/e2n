@@ -1,0 +1,19 @@
+language: node_js
+addons:
+    apt:
+      update: true
+node_js:
+  - "lts/carbon"
+cache:
+  directories:
+  - node_modules
+script:
+  - yarn unit
+  - yarn build --report
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $github_token
+  local_dir: dist
+  on:
+    branch: master

@@ -2,6 +2,7 @@
   "name": "e2n",
   "version": "0.0.1",
   "description": "A Vue.js project",
+  "homepage": "https://cham11ng.github.io/e2n",
   "author": "Sagar Chamling <sgr.raee@gmail.com>",
   "private": true,
   "scripts": {
